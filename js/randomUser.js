@@ -6,7 +6,8 @@ $(document).ready(function () {
     
 });
 
-
+/* Originalmente se cargaban los iconos de los paises desde esta web, pero debido a la politica CORS, opté por
+el almacenamiento local*/
 //let baseroute="https://img.freeflagicons.com/thumb/round_icon/";
 let baseroute="images/flags/"
 let endroute="_64.png";
