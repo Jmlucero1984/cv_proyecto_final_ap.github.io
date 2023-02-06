@@ -7,20 +7,36 @@ $(document).ready(function () {
 });
 
 
-let baseroute="https://img.freeflagicons.com/thumb/round_icon/";
+//let baseroute="https://img.freeflagicons.com/thumb/round_icon/";
+let baseroute="images/flags/"
 let endroute="_64.png";
+/*
 let countries = {
     "New Zealand": "new_zealand/new_zealand",
     "United Kingdom":"united_kingdom/united_kingdom",
     "United States":"united_states_of_america/united_states_of_america",
+}*/
+
+let countries = {
+    "New Zealand": "new_zealand",
+    "United Kingdom":"united_kingdom",
+    "United States":"united_states_of_america",
+    "Czech Republic":"czech_republic",
+    "Bouvet Island": "bouvet_island",
+    "Hong Kong":"hong_kong",
+    "Dominican Republic":"dominican_republic",
+    "United Arab Emirates":"united_arab_emirates"
+
 }
+
 function getCountryIcon(name){
     let output=baseroute;
     if (name in countries) {
         output+=countries[name]+endroute;
       } else {
         let lc = name.toLowerCase();
-        output+=lc + "/" + lc+endroute;
+        //output+=lc + "/" + lc+endroute;
+        output+=lc+endroute;
       }
     return output;
 }
