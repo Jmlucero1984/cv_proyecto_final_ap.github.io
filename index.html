@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_by_device.css">
+    <link rel="stylesheet" href="css/loadingFigures.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,900&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/randomUser.js"></script>
+    <script src="js/easyPieChart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,900&display=swap" rel="stylesheet">
+    <title>CV</title>
+</head>
+<body>
+  <div class="page-wrap">
+      
+    
+        
+    <header class="main-header group">
+     
+      <div class="profilePhoto" id="profilePhoto">
+     
+      </div>
+      <div class="top-right">
+        <div class="age-in-back">
+          <p class="age" id="age"></p>
+        </div>
+        <div class="name-title" id="name-title"></div>
+       
+      </div>
+      <nav class="nav">
+        <div class="spacer-nav"></div>
+        <div class="nav-bars">
+        <div class="overBar">
+          <div class="lifeicons salute" id="salute">
+            <a href="#saluteSection" id="salute-link"><img src="images/icons/salute_50.png" alt="" ></a>
+            <span class="tooltiptext" style="visibility: hidden;">Intro</span>
+          </div>
+          <div class="lifeicons codProg" id="codProg" >
+            <a href="#codProgSection" id="codProg-link"><img src="images/icons/codprog_50.png" alt="" ></a>
+            <span class="tooltiptext" style="visibility: hidden;">Programming</span>
+          </div>
+          <div class="lifeicons work_ce" id="work_ce" >
+            <a href="#work_ceSection" id="work_ce-link"><img src="images/icons/work_CE_50.png" alt=""></a>
+            <span class="tooltiptext" style="visibility: hidden;">Trabajos en CE</span>
+          </div>
+          <div class="lifeicons university" id="university" onmouseover="activateToolTip(this.id, false,'nav', true)"  onmouseout="deactivateToolTip(this.id,'nav')">
+            <a href="#universitySection" id="university-link"><img src="images/icons/univesity_50.png" alt="" ></a>
+            <span class="tooltiptext" style="visibility: hidden;">Universidad</span>
+          </div>
+          <div class="lifeicons graphicDesign" id="graphicDesign">
+            <a href="#graphicDesignSection" id="graphicDesign-link"><img src="images/icons/graphicDesign_50.png" alt=""></a>
+            <span class="tooltiptext" style="visibility: hidden;">Diseño Gráfico</span>
+          </div>
+          <div class="lifeicons highSchool" id="highSchool">
+            <a href="#highSchoolSection" id="highSchool-link"><img src="images/icons/highSchool_50.png" alt=""  ></a>
+            <span class="tooltiptext" style="visibility: hidden;">Secundario</span>
+          </div>
+        </div>
+        <div class="bar"></div>
+      </div>
+        
+      </nav>
+    </header>
+        
+    <div class="main-content">
+      <aside class="main-content--sidebar">
+        <div class="module">
+          <button class="accordion first" id="actitud"><p>ACTITUD</p></button>
+          <div class="panel first">
+            <div class="loadingBars">
+            <div class="barContainer">
+              <p>Autonomí­a 75%</p>
+              <div id="myProgress">
+                <div class="myBar"  data-percent="75"></div>
+              </div>
+            </div>
+            <div class="barContainer">
+              <p>Consenso 90%</p>
+              <div id="myProgress">
+                <div class="myBar"  data-percent="90"></div>
+              </div>
+            </div>
+            <div class="barContainer">
+              <p>Orden 65%</p>
+              <div id="myProgress">
+                <div class="myBar"  data-percent="65"></div>
+              </div>
+            </div>
+            <div class="barContainer">
+              <p>Asertividad 85%</p>
+              <div id="myProgress">
+                <div class="myBar"  data-percent="85"></div>
+              </div>
+            </div>
+            <div class="barContainer">
+              <p>Empatí­a 95%</p>
+              <div id="myProgress">
+                <div class="myBar"  data-percent="95"></div>
+              </div>
+            </div>
+            <div class="barContainer">
+              <p>Creatividad 90%</p>
+              <div id="myProgress">
+                <div class="myBar"  data-percent="90"></div>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+         
+                  
+          <button class="accordion second" id="informatica"><p>INFORMÁTICA</p></button>
+          <div class="panel second">
+            <div class="loaders_container">
+              <div class="box">
+                <h2>Html</h2>
+                <div class="chart" data-percent="73" data-scale-color="#F58800"><p>73%</p></div>
+                
+              </div>
+              <div class="box">
+                <h2>Css</h2>
+                <div class="chart" data-percent="90" data-scale-color="#F58800">90%</div>
+                
+              </div>
+              <div class="box">
+                <h2>Javascript</h2>
+                <div class="chart" data-percent="85" data-scale-color="#F58800">85%</div>
+               
+              </div>
+              <div class="box">
+                <h2>Photoshop</h2>
+                <div class="chart" data-percent="95" data-scale-color="#F58800">95%</div>
+                
+              </div> 
+            </div>
+          </div>
+                  
+          <button class="accordion third" id="datos"><p>DATOS</p></button>
+          <div class="panel third">
+      
+             <dl id="datosdl">
+           
+             </dl>
+          </div>
+        </div>
+            
+      </aside>
+
+      <main class="main-content--articles">
+        <!-- Main -->
+        <div class="scrollable">
+
+          <!-- Intro -->
+          <section id="saluteSection" class="two">
+            <div class="container">
+              <header>
+                <h2 class="alt">
+                    Saludos cordiales! Quiero contarte un poco sobre mí­:
+                </h2>
+                <div class="intro">
+                  <p>
+                    Soy una persona totalmente abierta a adaptarme a entornos desafiantes, 
+                    especialmente en el sector IT, que descubrí­ hace un tiempo y sinceramente
+                    me ha atrapado. Es increible cómo la mente puede expandirse a medida que surgen nuevos
+                    retos a la lógica y logra asimilar cosas que parecí­an totalmente fuera de tu alcance, 
+                    conceptos que muchos consideran sólo área de juego de auténticos genios. 
+                  </br>
+                  Te invito a seguir leyendo acerca de mi vida...
+                  </p>
+                </div>
+              </header>
+            </div>
+          </section>
+  
+          <!-- CodingProgramming -->
+          <section id="codProgSection" class="two">
+            <div class="container">
+              <header>
+                <h3>CODING AND PROGRAMMING</h3>
+              </header>
+              <div class="contentBox">
+                <div class="text">
+                  <p>
+                  Mis primeros pasos en la programación los dí­ hace muchos años atrás, allá por los 2000, cuando luego del tropezón de Macromedia Director, Flash parecí­a ser, y lo fué durante algún tiempo, la promesa de un nuevo mundo de interacción multimedia.
+                  Pasó luego más de una década y decidí­ retomar el camino. Me puse al dí­a con HTML, CSS y JavaScript. Me interesé en Java y Android Studio, y hasta hace poco estuve con C# y Unity.
+                  Si bien dediqué algunas horas a C++, considero que se extiende más allá de mi campo de interés.
+                  Tambien pasé algunos meses leyendo y practicando patrones de diseño, pero como dicen "para usar bien los patrones de diseño, tienes que hacerlo de tal manera que no parezca que empezaste por querer usar un patrón de diseño en particular".
+                  </p>
+                </div>
+
+                <div class="image">
+                  <a href="#" class="image featured">
+                    <img src="images/programming.jpg" alt="Close up de un monitor mostrando un script en JavaScript" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+            <!-- Work CE -->
+          <section id="work_ceSection" class="two">
+            <div class="container">
+              <header>
+                <h3>TRABAJANDO EN OBRAS</h3>
+              </header>
+              <div class="contentBox">
+                <div class="text">
+                  
+                  <p>
+                    Luego de recibirme de Ingeniero Civil pasé un tiempo de un lado al otro del territorio, a decir verdad, sólo para decepcionarme del estado actual de la industria en mi querido paí­s. Cuestiones subjetivas de lado, pude desarrollarme en: 
+                  <br>
+                  <ul>
+                    <li>Cómputos y Presupuestos</li>
+                    <li>Control de Calidad de Hormigonado en Obra</li>
+                    <li>Supervisión de Armado y Encofrado</li>
+                    <li>Gestión del Personal</li>
+                    <li>Control de Maquinarias y Equipos</li>
+                  </ul>
+                  <br>
+                  <p>
+                   Por sobre todo, pude tratar con personas de diferentes sectores de la sociedad, desde encumbrados ingenieros inspectores de reparticiones públicas nacionales, hasta obreros que se reinsertaban a la vida en libertad luego de estar recluidos.
+                  </p>
+                
+                </div>
+
+                <div class="image">
+                <!-- Slideshow container -->
+                  <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    
+                      <img src="images/slides/img1.jpg" style="width:100%" alt="Edificio residencial en altura">
+                        
+                    </div>
+
+                    <div class="mySlides fade">
+                    
+                      <img src="images/slides/img2.jpg" style="width:100%" alt="Armado de pilotes">
+                        
+                    </div>
+
+                    <div class="mySlides fade">
+                  
+                      <img src="images/slides/img3.jpg" style="width:100%" alt="Trabajo men equipo">
+                    
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- University -->
+          <section id="universitySection" class="two">
+            <div class="container">
+              <header>
+                <h3>INGENIERO CIVIL</h3>
+              </header>
+              <div class="contentBox">
+                <div class="text">
+                  <p>
+                  Me gradué de Ingeniero Civil por la Universidad Nacional. Fueron 7 largos años de los cuales sinceramente 
+                  no puedo decir muchas cosas agradables, un continuo memorizar contenido que aún siendo estudiante ya 
+                  sospechaba no tendrí­an utilidad práctica alguna (pues quienes lo impartí­an a simple vista demostraban 
+                  carecer de experiencia real en el campo fáctico), y para mi sorpresa, luego en la vida laboral, pude constatar
+                  que efectivamente tení­a razón.
+                  El motivo de esta parte de mi vida? Esa búsqueda personal de analizar el funcionamiento de las cosas y crear otras nuevas.
+                  </p>
+                </div>
+
+                <div class="image">
+                  <a href="#" class="image featured">
+                    <img src="images/graduation.jpg" alt="Foto con mis compañeros el dí­a de la graduación,  birretes al aire" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- Graphic Design -->
+            <section id="graphicDesignSection" class="two">
+            <div class="container">
+              <header>
+                <h3>DISEÑADOR GRÁFICO</h3>
+              </header>
+
+              <div class="contentBox">
+                <div class="text">
+                  <p>
+                 Me recibí­ de Diseñador en una fundación de la capital de mi paí­s. Fueron 3 años de aprender muchas cosas, pero muy buenas (y largas) noches sin dormir, ya que todo lo que descubrí­a salí­a de mi propio interés... TODO. Durante ese tiempo trabajé en proyectos que involucraron:
+                 <br>
+                 <br>
+                 <ul>
+                   <li>3d Studio Max 5/6/8</li>
+                   <li>Rhinoceros</li>
+                   <li>After Effects + Premiere + Audition</li>
+                   <li>Illustrator + Photoshop + InDesign</li>
+                   <li>Flash + ActionScript 2.0 (un lenguaje "hereje" para los más duros)</li>
+                   <li>Quark Express</li>
+                   <li>Corel Draw (sí, hay que ser valientes y admitirlo)</li>
+                   <li>Poser</li>
+                  </ul>
+                  </p>
+                </div>
+                <div class="image">
+                  <a href="#" class="image featured">
+                    <img src="images/graphicDesign.jpg" alt="Toma superior de una hoja con muchas ideas creativas" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- High School -->
+          <section id="highSchoolSection" class="two">
+            <div class="container">
+              <header>
+                <h3>ESTUDIOS SECUNDARIOS</h3>
+              </header>
+              <div class="contentBox">
+                <div class="text">
+                  <p>
+                   Egresado de un Colegio Salesiano con orientación en Ciencias Económicas, gracias al tiempo que pasaba aprendiendo otras cosas fuera de la institución, supe que mi interés pasaba por crear cosas nuevas y analizar el funcionamiento de cualquier objeto creado por otros humanos, mucho más que las teorí­as de la micro y macroeconomí­a, análisis financieros y demás tópicos.
+                  </p>
+                </div>
+                <div class="image">
+                  <a href="#" class="image featured">
+                    <img src="images/college.jpg" alt="Foto de mis compañeros caminando hacia la entrada del colegio" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+<script src="js/script.js"></script>
+</html>
