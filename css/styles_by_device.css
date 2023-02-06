@@ -1,0 +1,328 @@
+
+@media (min-width: 890px) {
+    .nav {
+        left: unset;
+        right: unset;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .page-wrap {
+        width: 98%;
+    }
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    .page-wrap {
+        padding-top: 15px;
+    }
+
+    .search {
+        left: 66.66%;
+        top: 80px;
+        width: 33.33%;
+    }
+
+    .main-content {
+        flex-direction: column;
+        top: 0px;
+    }
+
+
+    .profilePhoto {
+        width: 80px;
+        height: 110px;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+
+    .profilePhoto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav {
+        width: 100%;
+        float: right;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        z-index: 1001;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+ 
+    .nav-bars {
+        width: 100%;
+    }
+    .main-content--articles {
+        width: 100%;
+    }
+
+    .main-content--sidebar {
+        width: 100%;
+        max-width: unset;
+        padding-top: 8px;
+        flex: 0;
+    }
+
+
+    .module {
+        display: flex;
+        column-gap: 1px;
+        flex: 3;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 3px;
+        background-color: rgb(86 86 86);  
+    }
+
+
+    .accordion.first {
+        order: 1;
+        flex: 1;
+    }
+
+    .panel {
+        padding: 10px 7px;
+        background-color: var(--deepBlue);
+      }
+
+    .panel.first {
+        order: 4;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .accordion.second {
+        order: 2;
+        flex: 1;
+    }
+
+    .panel.second {
+        order: 5;
+        width: 100%;
+    }
+
+    .accordion.third {
+        order: 3;
+        flex: 1;
+    }
+
+    .panel.third {
+        order: 6;
+        width: 100%;
+    }
+
+    .bar {
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background-image: linear-gradient(90deg, var(--deepBlue) var(--percentageInit), #ffffff var(--percentageMiddle), var(--deepBlue) var(--percentageFinal));
+        border-radius: 0px;
+    }
+
+    .main-header {
+        position: relative;
+        top: 10px;
+    }
+
+    .name-title p {
+        font-size: 16pt;
+        width: fit-content;
+    }
+
+
+    background-image .accordion {
+        padding: 10px;
+        height: 30px;
+    }
+
+    .accordion p {
+        text-align: center;
+        font-size: 10pt;
+    }
+
+    .logoCountry {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .overBar {
+        width: 90%;
+        padding: 5px 0px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .lifeicons {
+        height: 30px;
+    }
+
+    .lifeicons img {
+        height: 30px;
+        color: #ccc;
+    }
+
+    .age {
+        position: absolute;
+        right: -30px;
+        bottom:-40px;
+        color: rgba(255, 255, 255, 0.212);
+        -webkit-text-stroke: 2px #465298;
+        font-size: 90pt;
+    }
+}
+
+
+
+
+@media (max-width: 550px) {
+    .nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .search {
+        left: 0;
+        width: 100%;
+        top: 130px;
+        height: 70px;
+    }
+
+    .main-content {
+        padding-top: 0px;
+    }
+
+    .main-content--articles {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .lifeicons {
+        height: 30px;
+    }
+
+    .age{
+        right: 0px;
+        font-size: 60pt;
+        bottom: -27px;
+    }
+
+    .lifeicons img {
+        height: 30px;
+        color: #ccc;
+    }
+
+
+    .name-title {
+        position: absolute;
+        display: flex;
+        bottom: 45px;
+        align-items: flex-start;
+        padding: 0px;
+        flex-direction: column;
+        background-color: unset;
+    }
+
+    .profilePhoto{
+        bottom: -5px;
+    }
+
+    .word-box {
+        width: auto;
+        padding-left: 15px;
+        padding-right: 60px;
+        background-color: unset;
+        background-image: linear-gradient(90deg, #1a4645 75%, #1a464500 100%);
+        justify-content: left;
+        box-shadow: 0px px 0px 0px rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+    }
+
+    .name-title {
+        background-image: unset;
+    }
+
+    .name-title p {
+        font-size: 16pt;
+        width: fit-content;
+    }
+
+    .accordion {
+        padding: unset;
+        height: 30px;
+    }
+
+    .accordion p {
+        text-align: center;
+        font-size: 10pt;
+    }
+
+    .contentBox {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .top-right{
+        width: 60%;
+    }
+    .age{
+        position: absolute;
+        right: -20px;
+        bottom: -35px;
+        font-size: 70pt;
+    }
+
+    .name-title {
+        bottom: 20px;
+    }
+
+    .name-title p {
+        font-size: 12pt;
+        width: fit-content;
+    }
+    .word-box{
+        background-image: linear-gradient(90deg, #1a4645 50%, #1a464500 100%);
+    }
+}
+
+
+@media (max-width: 330px) {
+ 
+    .top-right{
+        width: 40%;
+    }
+    .accordion p {
+        text-align: center;
+        font-size: 6pt;
+    }
+    .age{
+        position: absolute;
+        right: -60px;
+        bottom: -22px;
+        font-size: 40pt;
+    }
+
+}
